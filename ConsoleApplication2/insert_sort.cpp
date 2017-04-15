@@ -5,6 +5,7 @@
 #include <iostream>
 #include <windows.h>
 #include <stdio.h>
+#include "utility.h"
 
 using namespace std;
 
@@ -45,49 +46,7 @@ int BinarySearch(int a[], int start, int end, int value)
 }
 
 
-unsigned short SetConsoleColor(unsigned short ForeColor, unsigned short BackGroundColor)
-{
-	CONSOLE_SCREEN_BUFFER_INFO csbiInfo;
-	if (!GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbiInfo))
-	{
-		printf("GetConsoleScreenBufferInfo error!\n");
-		return 0;
-	}
-	if (!SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), ForeColor | BackGroundColor))
-	{
-		printf("SetConsoleTextAttribute error!\n");
-		return 0;
-	}
-	return csbiInfo.wAttributes;
-}
 
-inline std::ostream&  red(std::ostream& ostr)
-{
-	SetConsoleColor(FOREGROUND_RED, 0);
-	return ostr;
-}
-
-inline std::ostream&  white(std::ostream& ostr)
-{
-	SetConsoleColor(FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE, 0);
-	return ostr;
-}
-
-void print(int a[], int n, int highlight) {
-	for (int j = 0; j < n; j++) 
-	{
-		if (j == highlight)
-		{
-			cout << red << a[j] << " ";
-		}
-		else
-		{
-			cout << white << a[j] << " ";
-		}
-
-	}
-	cout << endl;
-}
 
 
 void InsertSort(int a[], int n)

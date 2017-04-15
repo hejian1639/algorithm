@@ -14,6 +14,7 @@ void print(int a[], int n, int highlight);
 
 
 void InsertSort(int a[], int n);
+void HeapSort(int a[], int n);
 
 int main()
 {
