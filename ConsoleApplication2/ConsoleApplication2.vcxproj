@@ -153,6 +153,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="heap_sort.cpp" />
     <ClCompile Include="insert_sort.cpp" />
+    <ClCompile Include="merge_sort.cpp" />
     <ClCompile Include="quick_sort.cpp" />
     <ClCompile Include="shell_insert_sort.cpp" />
     <ClCompile Include="stdafx.cpp">

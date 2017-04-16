@@ -16,11 +16,12 @@ void print(int a[], int n, int highlight);
 void InsertSort(int a[], int n);
 void HeapSort(int a[], int n);
 void QuickSort(int a[], int n);
+void MergeSort(int a[], int n);
 
 int main()
 {
-	int a[] = { 3,1,5,7,2,4,9,6 };
-	QuickSort(a, sizeof(a) / sizeof(int));
+	int a[] = { 3,1,5,7,2,4,9,6,8 };
+	MergeSort(a, sizeof(a) / sizeof(int));
 	print(a, sizeof(a) / sizeof(int), 100);
 	return 0;
 }

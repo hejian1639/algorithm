@@ -28,9 +28,9 @@ inline std::ostream&  white(std::ostream& ostr)
 
 void print(int a[], int n, int highlight);
 
-inline void swap(int& a, int& b)
-{
-	a = a ^ b;
-	b = a ^ b;
-	a = a ^ b;
-}
+//inline void swap(int& a, int& b)
+//{
+//	a = a ^ b;
+//	b = a ^ b;
+//	a = a ^ b;
+//}
