@@ -15,11 +15,12 @@ void print(int a[], int n, int highlight);
 
 void InsertSort(int a[], int n);
 void HeapSort(int a[], int n);
+void QuickSort(int a[], int n);
 
 int main()
 {
 	int a[] = { 3,1,5,7,2,4,9,6 };
-	InsertSort(a, sizeof(a) / sizeof(int));
+	QuickSort(a, sizeof(a) / sizeof(int));
 	print(a, sizeof(a) / sizeof(int), 100);
 	return 0;
 }
