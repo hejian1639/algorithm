@@ -12,7 +12,6 @@ using namespace std;
 
 
 
-const int MAX = 0x0FFFFFFF;
 
 const int map_size = 6;
 

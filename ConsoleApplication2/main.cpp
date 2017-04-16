@@ -34,6 +34,7 @@ int pathMap[][map_size] =
 
 
 void Dijkstra(int map[][map_size]);
+void Floyd(int map[][map_size]);
 
 int main()
 {
@@ -42,6 +43,7 @@ int main()
 	print(a, sizeof(a) / sizeof(int), 100);
 
     Dijkstra(pathMap);
+	Floyd(pathMap);
 
 	return 0;
 }

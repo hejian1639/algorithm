@@ -28,9 +28,28 @@ inline std::ostream&  white(std::ostream& ostr)
 
 void print(int a[], int n, int highlight);
 
-//inline void swap(int& a, int& b)
-//{
-//	a = a ^ b;
-//	b = a ^ b;
-//	a = a ^ b;
-//}
+const int MAX = 0x0FFFFFFF;
+
+template<int N>
+void print(int m[][N], int n) {
+	for (int i = 0; i < n; i++)
+	{
+			cout << "{ ";
+		for (int j = 0; j < n; j++)
+		{
+			if(m[i][j] == MAX)
+			{
+				cout << "MAX,";
+			}
+			else
+			{
+				cout << m[i][j] << ",";
+
+			}
+				cout << "\t";
+		}
+		cout << "}\n";
+
+	}
+	cout << '\n';
+}
