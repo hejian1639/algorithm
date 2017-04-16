@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -151,12 +151,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dijkstra.cpp" />
+    <ClCompile Include="floyd.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="heap_sort.cpp" />
     <ClCompile Include="insert_sort.cpp" />
     <ClCompile Include="merge_sort.cpp" />
     <ClCompile Include="quick_sort.cpp" />
-    <ClCompile Include="shell_insert_sort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
