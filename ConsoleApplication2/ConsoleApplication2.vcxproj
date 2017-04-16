@@ -150,6 +150,7 @@
     <ClInclude Include="utility.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dijkstra.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="heap_sort.cpp" />
     <ClCompile Include="insert_sort.cpp" />
